@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(156, 245, 217, 0.73);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.container {
+    width: 80%;
+
+}
+h1 {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    margin: 25px auto;
+    background-color: dodgerblue;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+}
+.container-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+.card {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    transition: 0.8s;
+    transform-style: preserve-3d;
+
+    position: relative;
+
+}
+.title-card{
+    color: dodgerblue;
+    margin: 0 auto;
+    font-size: 24px;
+
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: dodgerblue;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+
+}
+.description-card{
+    color: white;
+    margin: 0 auto;
+}
+
